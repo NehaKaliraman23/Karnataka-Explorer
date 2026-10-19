@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f7f4;
+    color: #263238;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #087f5b, #38b000);
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 17px;
+}
+
+.container {
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+    text-align: center;
+    color: #087f5b;
+    margin-bottom: 8px;
+}
+
+.container > p {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #666;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 16px;
+    background: white;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #38b000;
+    border-color: #087f5b;
+}
+
+button {
+    margin-top: 25px;
+    padding: 14px;
+    background: #087f5b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #056344;
+}
+
+#result {
+    margin-top: 25px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #555;
+}
+
+@media (max-width: 700px) {
+    .container {
+        margin: 20px 12px;
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+}
+.day-card {
+    background: #f0f7f4;
+    padding: 18px;
+    margin-top: 15px;
+    border-left: 5px solid #087f5b;
+    border-radius: 8px;
+}
+
+#result h2 {
+    color: #087f5b;
+    margin-bottom: 15px;
+}
+
+#result h3 {
+    margin-bottom: 8px;
+}
+
+#result p {
+    margin: 8px 0;
+}
+/* Karnataka Explorer - Design Improvements */
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    padding: 45px 20px;
+    background: linear-gradient(135deg, #064e3b, #087f5b, #70b832);
+}
+
+header h1 {
+    font-size: 38px;
+    letter-spacing: 1px;
+}
+
+header p {
+    max-width: 600px;
+    margin: 8px auto 0;
+}
+
+.container {
+    max-width: 720px;
+    border: 1px solid #e0eee7;
+    transition: box-shadow 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: 0 8px 25px rgba(8, 127, 91, 0.15);
+}
+
+.container h2 {
+    font-size: 26px;
+}
+
+input,
+select {
+    transition: border-color 0.2s ease;
+}
+
+input:hover,
+select:hover {
+    border-color: #087f5b;
+}
+
+button {
+    background: linear-gradient(135deg, #087f5b, #38b000);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #056344, #268000);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(8, 127, 91, 0.2);
+}
+
+.day-card {
+    border: 1px solid #d9eee2;
+    border-left: 5px solid #087f5b;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+    transition: transform 0.2s ease;
+}
+
+.day-card:hover {
+    transform: translateY(-3px);
+}
+
+footer {
+    margin-top: 25px;
+    background: #e4f2e9;
+    color: #315c46;
+}
+
+@media (max-width: 700px) {
+    header {
+        padding: 30px 15px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+}
+/* Tourist Places Section */
+
+.places-section {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 25px 20px;
+    text-align: center;
+}
+
+.places-section h2 {
+    color: #087f5b;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.places-section > p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.places-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.place-card {
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    text-align: left;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.place-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 22px rgba(8, 127, 91, 0.18);
+}
+
+.place-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.place-info {
+    padding: 18px;
+}
+
+.place-info h3 {
+    color: #087f5b;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.place-info p {
+    color: #555;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.place-info span {
+    display: inline-block;
+    background: #e4f5e9;
+    color: #087f5b;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+@media (max-width: 750px) {
+    .places-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 500px) {
+    .places-container {
+        grid-template-columns: 1fr;
+    }
+
+    .places-section h2 {
+        font-size: 25px;
+    }
+}

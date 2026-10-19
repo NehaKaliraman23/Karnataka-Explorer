@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karnataka Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🌍 Karnataka Explorer</h1>
+        <p>Your Personal Travel Planner</p>
+    </header>
+
+    <main class="container">
+        <h2>Plan Your Dream Trip!</h2>
+        <p>Discover the beautiful places of Karnataka.</p>
+
+        <form id="travelForm">
+
+            <label for="city">Starting City</label>
+            <input type="text" id="city" placeholder="Enter your starting city" required>
+
+            <label for="days">Number of Days</label>
+            <select id="days" required>
+                <option value="">Choose trip duration</option>
+                <option value="1">1 Day</option>
+                <option value="2">2 Days</option>
+                <option value="3">3 Days</option>
+                <option value="5">5 Days</option>
+                <option value="7">7 Days</option>
+            </select>
+
+            <label for="budget">Your Budget (₹)</label>
+            <input type="number" id="budget" placeholder="Enter your budget" min="1" required>
+
+            <label for="interest">What do you like?</label>
+            <select id="interest" required>
+                <option value="">Choose your interest</option>
+                <option value="nature">Nature and Waterfalls</option>
+                <option value="history">Historical Places</option>
+                <option value="culture">Culture and Temples</option>
+                <option value="adventure">Adventure</option>
+            </select>
+
+            <label for="travellers">Who is travelling?</label>
+            <select id="travellers" required>
+                <option value="">Choose an option</option>
+                <option value="solo">Solo</option>
+                <option value="family">Family</option>
+                <option value="friends">Friends</option>
+                <option value="couple">Couple</option>
+            </select>
+
+            <button type="submit">✨ Generate My Travel Plan</button>
+
+        </form>
+
+        <section id="result" aria-live="polite"></section>
+    </main>
+<!-- Explore Karnataka Section -->
+    <section class="places-section">
+        <h2>🌿 Explore Karnataka</h2>
+        <p>Discover amazing destinations for your next adventure!</p>
+
+        <div class="places-container">
+
+            <div class="place-card">
+                <img
+                    src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=600&q=80"
+                    alt="Green nature landscape">
+                <div class="place-info">
+                    <h3>🌳 Coorg</h3>
+                    <p>Explore green hills, coffee plantations and peaceful natural scenery.</p>
+                    <span>Category: Nature</span>
+                </div>
+            </div>
+
+            <div class="place-card">
+                <img
+                    src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=600&q=80"
+                    alt="Historic architecture">
+                <div class="place-info">
+                    <h3>🏛️ Hampi</h3>
+                    <p>Discover ancient ruins, historic temples and the heritage of the Vijayanagara Empire.</p>
+                    <span>Category: History</span>
+                </div>
+            </div>
+
+            <div class="place-card">
+                <img
+                    src="https://images.unsplash.com/photo-1606293926075-69a00dbfde81?auto=format&fit=crop&w=600&q=80"
+                    alt="Indian palace architecture">
+                    <div class="place-info">
+                    <h3>👑 Mysuru</h3>
+                    <p>Explore the famous Mysore Palace and the city's rich cultural heritage.</p>
+                    <span>Category: Culture</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <footer>
+
+        <p>Made with ❤️ for exploring Karnataka</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
